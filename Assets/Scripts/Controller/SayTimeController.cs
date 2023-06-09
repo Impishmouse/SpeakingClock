@@ -34,9 +34,14 @@ public class SayTimeController : MonoBehaviour
         _hoursToAudioClip.Add(20, AudioConfig.Instance.Twentieth);
     }
 
-    public void SayTime(int hours, bool sayHalfHour)
+    public void SayTime(int hours, int minutes)
     {
-        _sayMinutes = sayHalfHour;
+        SayTime(hours,minutes == 30);
+    }
+    
+    public void SayTime(int hours, bool sayMinutes)
+    {
+        _sayMinutes = sayMinutes;
         
         if (hours >= 1 && hours <= 20)
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Core.UI.Manager.Abstract;
 using ScriptableObjects;
 using UnityEngine;
@@ -14,35 +15,69 @@ public class HomeScreen : BaseScreen
         base.Awake();
         btnPlay.onClick.AddListener(OnPlayButtonClickHandler);
         btnStartCoroutines.onClick.AddListener(OnStartCoroutines);
-        
+
         // TODO :  
         // BASE Alg. - Check current time and initiate a method to say how many time is now or schedule a coroutine to waite.
-        // 1. Make a method to say a current time hour or half hour. 
-        // 2. Check time if it equal hour or half hour call method to say a time.
-        // 3. Schedule coroutine to next hour or half hour to call say a time method. 
-        
-        
-        
+        // Done 1. Make a method to say a current time hour or half hour. 
+        // Done 2. Check time if it equal hour or half hour call method to say a time.
+        // Done 3. Schedule coroutine to next hour or half hour to call say a time method.
+        // Done 4. Make a next schedule for next period, may be add delay in 30 minutes ? 
+    }
+
+    protected void Start()
+    {
+        var time = GetCurrentTime();
+        // If at start need to say current time cause full hour or half hour 
+        if (time.Minute is 0 or 30)
+        {
+            SayAndScheduleNext();
+        }
+        else // schedule a coroutine to next full hour or half hour.
+        {
+            var delay = MinToSec((time.Minute > 30 ? 60 : 30) - time.Minute);
+            Debug.Log("Set delay to (" + delay + ") seconds");
+            StartCoroutine(ScheduleTimeToSay(delay));
+        }
+    }
+
+    private DateTime GetCurrentTime()
+    {
+        var time = System.DateTime.UtcNow.ToLocalTime();
+        Debug.Log(time.ToString());
+        return time;
+    }
+
+    private IEnumerator ScheduleTimeToSay(int waiteTime)
+    {
+        yield return new WaitForSeconds(waiteTime); //wait time in seconds
+        SayAndScheduleNext();
+        yield return null;
+    }
+
+    private void SayCurrentTime()
+    {
+        var time = GetCurrentTime();
+        App.SayTimeController.SayTime(time.Hour, time.Minute);
+    }
+
+    private void SayAndScheduleNext()
+    {
+        SayCurrentTime();
+        StartCoroutine(ScheduleTimeToSay(MinToSec(30)));
+    }
+
+    private int MinToSec(int minutes)
+    {
+        return minutes * 60;
     }
 
     private void OnStartCoroutines()
     {
-        StartCoroutine(Countdown2());
+        // StartCoroutine(ScheduleTimeToSay(2));
     }
 
-    private IEnumerator Countdown2() {
-        while(true) {
-            yield return new WaitForSeconds(2); //wait 2 seconds
-            //do thing
-            OnPlayButtonClickHandler();
-            yield return new WaitForSeconds(5); //wait 2 seconds
-        }
-    }
-    
     private void OnPlayButtonClickHandler()
     {
-        App.SayTimeController.SayTime(10, true);
+        SayCurrentTime();
     }
-
-    
 }
