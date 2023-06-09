@@ -41,7 +41,7 @@ public class HomeScreen : BaseScreen
     
     private void OnPlayButtonClickHandler()
     {
-        App.SayTimeController.SayTime(24, true);
+        App.SayTimeController.SayTime(10, true);
     }
 
     
