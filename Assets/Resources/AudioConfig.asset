@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e23362b569c142b99e4d2bbccf5e73da, type: 3}
+  m_Name: AudioConfig
+  m_EditorClassIdentifier: 
+  Hour: {fileID: 8300000, guid: c1592eab475c24c43aa2267def618e97, type: 3}
+  One: {fileID: 8300000, guid: fbe4460a38039fe45b565055a41b22fa, type: 3}
+  Two: {fileID: 8300000, guid: aaedaaea3eae27e449a7b2df68104a8f, type: 3}
+  Three: {fileID: 8300000, guid: c5d94d3180080fa48b2db62cda1aec3c, type: 3}
+  Fore: {fileID: 8300000, guid: f2135c7779c0a1649b76407cdda41891, type: 3}
+  Five: {fileID: 8300000, guid: 7f596170ea4ac984ca66d6ae150bf324, type: 3}
+  Six: {fileID: 8300000, guid: 5d1d238a0a380ef41b69943c3c866b03, type: 3}
+  Seven: {fileID: 8300000, guid: bf3be4bf46c980b4f92baf8f566640c2, type: 3}
+  Eight: {fileID: 8300000, guid: e026da107b905f3458fc47fde21d1cf6, type: 3}
+  Nine: {fileID: 8300000, guid: 4691d013ba1e6a6448422e200a3ef88b, type: 3}
+  Ten: {fileID: 8300000, guid: af806bf80f0f6344da07ca97cc7e4d72, type: 3}
+  Eleven: {fileID: 8300000, guid: 4c7e6e0e7aff0f44ea2a79c94fc0819c, type: 3}
+  Twelve: {fileID: 8300000, guid: 15c69a20752b6a54f97fd8c8448bf8db, type: 3}
+  Thirteen: {fileID: 8300000, guid: 3542b7160fb6d314ebcf8bb01ca3bf7f, type: 3}
+  Fourteen: {fileID: 8300000, guid: b1286d423e7b9ea48a3712a47e66c1a8, type: 3}
+  Fiveteen: {fileID: 8300000, guid: 5d0f71aba67fb1b4db3368260fe1cebc, type: 3}
+  Sixteen: {fileID: 8300000, guid: 23505b2199d68b5428cf02cf98de5928, type: 3}
+  Seventeen: {fileID: 8300000, guid: edb90e4aed3c3b04d90dbcb263ad07f8, type: 3}
+  Eighteen: {fileID: 8300000, guid: 3c6ac07aa8e0c0745979582b37e84cb8, type: 3}
+  Nineteen: {fileID: 8300000, guid: 98f9a0d356d8eb14c857ea332e71fe5d, type: 3}
+  Twentieth: {fileID: 8300000, guid: 670bb61dcf6e87b449fe6e76f29d1f87, type: 3}
+  Twenty: {fileID: 8300000, guid: 47a69092b4c723045afe368a3070491a, type: 3}
+  ThirtyMsinutes: {fileID: 8300000, guid: c8505cd588b7c114db7ac27e5a68dd77, type: 3}
