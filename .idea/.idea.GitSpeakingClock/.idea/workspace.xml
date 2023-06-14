@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/10.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/11.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/11.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/12.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/12.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/13.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/13.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/14.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/14.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/15.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/15.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/16.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/16.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/17.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/17.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/18.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/18.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/19.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/19.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/20.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/20.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/20_.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/20_.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/6.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/7.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/8.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/9.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/h.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/hours/h.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/minutes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/minutes/30m.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/minutes/30m.wav.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +79,7 @@
       <updated>1686293738160</updated>
       <workItem from="1686293743768" duration="9930000" />
       <workItem from="1686583194570" duration="695000" />
-      <workItem from="1686759125105" duration="491000" />
+      <workItem from="1686759125105" duration="1087000" />
     </task>
     <servers />
   </component>
