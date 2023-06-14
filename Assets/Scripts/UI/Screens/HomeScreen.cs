@@ -14,7 +14,7 @@ public class HomeScreen : BaseScreen
     {
         base.Awake();
         btnPlay.onClick.AddListener(OnPlayButtonClickHandler);
-        btnStartCoroutines.onClick.AddListener(OnStartCoroutines);
+        btnStartCoroutines.onClick.AddListener(OnTestMinutesSay);
 
         // TODO :  
         // BASE Alg. - Check current time and initiate a method to say how many time is now or schedule a coroutine to waite.
@@ -71,9 +71,9 @@ public class HomeScreen : BaseScreen
         return minutes * 60;
     }
 
-    private void OnStartCoroutines()
+    private void OnTestMinutesSay()
     {
-        // StartCoroutine(ScheduleTimeToSay(2));
+        App.SayTimeController.SayTime(10, 30);
     }
 
     private void OnPlayButtonClickHandler()
