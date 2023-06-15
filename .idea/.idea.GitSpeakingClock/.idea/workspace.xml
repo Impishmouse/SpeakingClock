@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="" />
+    <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +85,7 @@
       <workItem from="1686293743768" duration="9930000" />
       <workItem from="1686583194570" duration="695000" />
       <workItem from="1686759125105" duration="1087000" />
+      <workItem from="1686833876891" duration="6037000" />
     </task>
     <servers />
   </component>
@@ -90,5 +96,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
+          <line>25</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="25" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="892" />
+            </startOffsets>
+            <endOffsets>
+              <option value="943" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

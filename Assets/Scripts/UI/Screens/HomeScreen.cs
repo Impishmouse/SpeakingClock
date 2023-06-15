@@ -16,12 +16,15 @@ public class HomeScreen : BaseScreen
         btnPlay.onClick.AddListener(OnPlayButtonClickHandler);
         btnStartCoroutines.onClick.AddListener(OnTestMinutesSay);
 
-        // TODO :  
+        // TODO :   Clock controller and time sayer
         // BASE Alg. - Check current time and initiate a method to say how many time is now or schedule a coroutine to waite.
         // Done 1. Make a method to say a current time hour or half hour. 
         // Done 2. Check time if it equal hour or half hour call method to say a time.
         // Done 3. Schedule coroutine to next hour or half hour to call say a time method.
         // Done 4. Make a next schedule for next period, may be add delay in 30 minutes ? 
+        
+        // TODO :  Weather controller sayer.
+        // Base get data from  https://api.openweathermap.org/data/2.5/weather?id=702550&units=metric&lang=ua&appid=789ce2a5ee25556243a78f50f5aa1547
     }
 
     protected void Start()
@@ -78,6 +81,7 @@ public class HomeScreen : BaseScreen
 
     private void OnPlayButtonClickHandler()
     {
+        App.SayTimeController.NeedsStartRingPlay = true;
         SayCurrentTime();
     }
 }

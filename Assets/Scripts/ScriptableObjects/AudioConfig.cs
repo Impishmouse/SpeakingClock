@@ -5,8 +5,6 @@ namespace ScriptableObjects
 	[CreateAssetMenu(fileName = nameof(AudioConfig), menuName = "ScriptableObjects/Audio/Config")]
 	public class AudioConfig : ScriptableObjectSigletone<AudioConfig>
 	{
-		
-		public AudioClip Hour;
 		public AudioClip One;
 		public AudioClip Two;
 		public AudioClip Three;
@@ -26,9 +24,26 @@ namespace ScriptableObjects
 		public AudioClip Seventeen;
 		public AudioClip Eighteen;
 		public AudioClip Nineteen;
-		public AudioClip Twentieth;
+		
 		public AudioClip Twenty;
+		public AudioClip TwentyOne;
+		public AudioClip TwentySecond;
+		public AudioClip TwentyThird;
+		public AudioClip TwentyFourth;
 		public AudioClip ThirtyMsinutes;
+		public AudioClip StartRing;
+		
+		
+		public AudioClip Atmosphere;
+		public AudioClip Clear;
+		public AudioClip Clouds;
+		public AudioClip Drizzle;
+		public AudioClip Rain;
+		public AudioClip Snow;
+		public AudioClip Thunderstorm;
+		
+		
+		
 		
 	}
 }

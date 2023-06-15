@@ -8,9 +8,13 @@ public class SayTimeController : MonoBehaviour
     private Dictionary<int, AudioClip> _hoursToAudioClip;
     private bool _sayMinutes;
     private int _remainder;
+    private int _hours;
+    private bool _needsStartRingPlay;
 
     private void Awake()
     {
+        _needsStartRingPlay = true;
+        
         _hoursToAudioClip = new Dictionary<int, AudioClip>();
         _hoursToAudioClip.Add(1, AudioConfig.Instance.One);
         _hoursToAudioClip.Add(2, AudioConfig.Instance.Two);
@@ -31,9 +35,19 @@ public class SayTimeController : MonoBehaviour
         _hoursToAudioClip.Add(17, AudioConfig.Instance.Seventeen);
         _hoursToAudioClip.Add(18, AudioConfig.Instance.Eighteen);
         _hoursToAudioClip.Add(19, AudioConfig.Instance.Nineteen);
-        _hoursToAudioClip.Add(20, AudioConfig.Instance.Twentieth);
+        _hoursToAudioClip.Add(20, AudioConfig.Instance.Twenty);
+        _hoursToAudioClip.Add(21, AudioConfig.Instance.TwentyOne);
+        _hoursToAudioClip.Add(22, AudioConfig.Instance.TwentySecond);
+        _hoursToAudioClip.Add(23, AudioConfig.Instance.TwentyThird);
+        _hoursToAudioClip.Add(24, AudioConfig.Instance.TwentyFourth);
     }
 
+    public bool NeedsStartRingPlay {
+        set {
+            _needsStartRingPlay = value;
+        }
+    }
+    
     public void SayTime(int hours, int minutes)
     {
         SayTime(hours,minutes == 30);
@@ -41,19 +55,27 @@ public class SayTimeController : MonoBehaviour
     
     public void SayTime(int hours, bool sayMinutes)
     {
+        _hours = hours;
         _sayMinutes = sayMinutes;
+
+        if (_needsStartRingPlay)
+        {
+            _needsStartRingPlay = false;
+            App.AudioController.PlaySound(AudioConfig.Instance.StartRing, OnFinishStartRing);
+            return;
+        }    
         
-        if (hours >= 1 && hours <= 20)
+        if (hours >= 1 && hours <= 24)
         {
             App.AudioController.PlaySound(_hoursToAudioClip[hours], OnFinishHourSay);
         }
-        else if (hours > 20 && hours <= 24)
-        {
-            _remainder = hours - 20;
-            App.AudioController.PlaySound(AudioConfig.Instance.Twenty, OnFinishRemainderSay);
-        }
     }
 
+    private void OnFinishStartRing()
+    {
+        SayTime(_hours, _sayMinutes);
+    }
+    
     private void OnFinishRemainderSay()
     {
         SayTime(_remainder, _sayMinutes);
@@ -62,10 +84,7 @@ public class SayTimeController : MonoBehaviour
     private void OnFinishHourSay()
     {
         if (_sayMinutes)
-            App.AudioController.PlaySound(AudioConfig.Instance.Hour, OnFinishMinutesSay);
-        else
-            App.AudioController.PlaySound(AudioConfig.Instance.Hour);            
-        
+            OnFinishMinutesSay();
     }
 
     private void OnFinishMinutesSay()
