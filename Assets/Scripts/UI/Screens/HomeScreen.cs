@@ -76,7 +76,10 @@ public class HomeScreen : BaseScreen
 
     private void OnTestMinutesSay()
     {
-        App.SayTimeController.SayTime(10, 30);
+        //App.SayTimeController.SayTime(10, 30);
+        
+        var weather = gameObject.AddComponent<WeatherGetController>() ;
+        
     }
 
     private void OnPlayButtonClickHandler()

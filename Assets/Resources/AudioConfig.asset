@@ -12,6 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e23362b569c142b99e4d2bbccf5e73da, type: 3}
   m_Name: AudioConfig
   m_EditorClassIdentifier: 
+  config:
+  - audioType: 2
+    audioClips:
+    - {fileID: 8300000, guid: 719e15b54189ccb448dd748d929bf151, type: 3}
+    - {fileID: 8300000, guid: 0a5879ace494b4e48b0c1cd29ee1249f, type: 3}
+    - {fileID: 8300000, guid: a3f741d976463cb46aff48bf7f69c953, type: 3}
+    - {fileID: 8300000, guid: 79a3dd3dacca2fb499d171e2591a8d5e, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   One: {fileID: 8300000, guid: 719e15b54189ccb448dd748d929bf151, type: 3}
   Two: {fileID: 8300000, guid: 0a5879ace494b4e48b0c1cd29ee1249f, type: 3}
   Three: {fileID: 8300000, guid: a3f741d976463cb46aff48bf7f69c953, type: 3}

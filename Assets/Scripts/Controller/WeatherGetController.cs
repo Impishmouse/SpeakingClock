@@ -11,11 +11,13 @@ public class WeatherGetController : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        Debug.Log("Test call URL");
+        
         // Відкриття посилання
-        Application.OpenURL(targetURL);
+        //Application.OpenURL(targetURL);
 
         // Очікування деякого часу для завантаження сторінки
-        yield return new WaitForSeconds(5f); // Змініть цей час за потребою
+        //yield return new WaitForSeconds(5f); // Змініть цей час за потребою
 
         // Отримання відповіді зі сторінки
         UnityWebRequest request = UnityWebRequest.Get(targetURL);

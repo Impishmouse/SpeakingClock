@@ -1,10 +1,13 @@
-﻿﻿using UnityEngine;
+﻿﻿using System.Collections.Generic;
+ using UnityEngine;
 
 namespace ScriptableObjects
 {
 	[CreateAssetMenu(fileName = nameof(AudioConfig), menuName = "ScriptableObjects/Audio/Config")]
 	public class AudioConfig : ScriptableObjectSigletone<AudioConfig>
 	{
+		public List<AudioData> config;
+
 		public AudioClip One;
 		public AudioClip Two;
 		public AudioClip Three;

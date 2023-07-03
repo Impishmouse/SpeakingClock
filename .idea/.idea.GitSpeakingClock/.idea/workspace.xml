@@ -3,14 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/AudioConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bae255e3e08e46f7bc2fbd23dde96338158800/16/d8b023cb/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,6 +93,8 @@
       <workItem from="1686583194570" duration="695000" />
       <workItem from="1686759125105" duration="1087000" />
       <workItem from="1686833876891" duration="6037000" />
+      <workItem from="1687163675977" duration="2620000" />
+      <workItem from="1688397549026" duration="1196000" />
     </task>
     <servers />
   </component>
@@ -102,16 +111,68 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
-          <line>25</line>
+          <line>27</line>
           <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="25" containingFunctionPresentation="method 'Start'">
             <startOffsets>
-              <option value="892" />
+              <option value="941" />
             </startOffsets>
             <endOffsets>
-              <option value="943" />
+              <option value="992" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
+          <line>16</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="14" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="527" />
+            </startOffsets>
+            <endOffsets>
+              <option value="558" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
+          <line>22</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="20" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="751" />
+            </startOffsets>
+            <endOffsets>
+              <option value="808" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
+          <line>13</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="13" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="449" />
+            </startOffsets>
+            <endOffsets>
+              <option value="476" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
+          <line>23</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="23" containingFunctionPresentation="method 'Start'">
+            <startOffsets>
+              <option value="817" />
+            </startOffsets>
+            <endOffsets>
+              <option value="855" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
