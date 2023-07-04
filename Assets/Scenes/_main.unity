@@ -386,6 +386,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 519420030}
+--- !u!114 &1108299612 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2771655101359911058, guid: cc86e5890a5f4614491598cffedf0f0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4801733686297430165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &1528285332
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -512,10 +524,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 508704296, guid: cc86e5890a5f4614491598cffedf0f0e, type: 3}
+      propertyPath: btnSecondTest
+      value: 
+      objectReference: {fileID: 1108299612}
+    - target: {fileID: 1843390281, guid: cc86e5890a5f4614491598cffedf0f0e, type: 3}
+      propertyPath: m_Text
+      value: Say time
+      objectReference: {fileID: 0}
     - target: {fileID: 1051797262774578338, guid: cc86e5890a5f4614491598cffedf0f0e,
         type: 3}
       propertyPath: m_Text
-      value: Test Hour with Min
+      value: test btn
       objectReference: {fileID: 0}
     - target: {fileID: 3241932049573131888, guid: cc86e5890a5f4614491598cffedf0f0e,
         type: 3}
@@ -526,6 +546,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HomeScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038601928550038578, guid: cc86e5890a5f4614491598cffedf0f0e,
+        type: 3}
+      propertyPath: m_Name
+      value: testSecondButton
       objectReference: {fileID: 0}
     - target: {fileID: 6438952557442854457, guid: cc86e5890a5f4614491598cffedf0f0e,
         type: 3}

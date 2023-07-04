@@ -3,18 +3,19 @@ using System.Collections;
 using Core.UI.Manager.Abstract;
 using ScriptableObjects;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class HomeScreen : BaseScreen
 {
     [SerializeField] private Button btnPlay;
-    [SerializeField] private Button btnStartCoroutines;
+    [SerializeField] private Button btnSecondTest;
 
     protected override void Awake()
     {
         base.Awake();
         btnPlay.onClick.AddListener(OnPlayButtonClickHandler);
-        btnStartCoroutines.onClick.AddListener(OnTestMinutesSay);
+        btnSecondTest.onClick.AddListener(OnTestSecondButtonClick);
 
         // TODO :   Clock controller and time sayer
         // BASE Alg. - Check current time and initiate a method to say how many time is now or schedule a coroutine to waite.
@@ -74,12 +75,9 @@ public class HomeScreen : BaseScreen
         return minutes * 60;
     }
 
-    private void OnTestMinutesSay()
+    private void OnTestSecondButtonClick()
     {
-        //App.SayTimeController.SayTime(10, 30);
-        
         var weather = gameObject.AddComponent<WeatherGetController>() ;
-        
     }
 
     private void OnPlayButtonClickHandler()

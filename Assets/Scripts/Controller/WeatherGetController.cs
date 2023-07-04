@@ -1,7 +1,12 @@
+using System;
 using System.Collections;
-
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 using UnityEngine.Serialization;
 
 public class WeatherGetController : MonoBehaviour
@@ -13,12 +18,6 @@ public class WeatherGetController : MonoBehaviour
     {
         Debug.Log("Test call URL");
         
-        // Відкриття посилання
-        //Application.OpenURL(targetURL);
-
-        // Очікування деякого часу для завантаження сторінки
-        //yield return new WaitForSeconds(5f); // Змініть цей час за потребою
-
         // Отримання відповіді зі сторінки
         UnityWebRequest request = UnityWebRequest.Get(targetURL);
         yield return request.SendWebRequest();
@@ -27,11 +26,47 @@ public class WeatherGetController : MonoBehaviour
         {
             string responseText = request.downloadHandler.text;
             
-            /*// Конвертація відповіді в JSON
-            JSONObject json = new JSONObject(responseText);
+            // TODO move this code to JSON  weather parser
+            
+            var dict = JsonConvert.DeserializeObject<Dictionary<string, JToken>>(responseText);
 
-            // Доступ до даних в форматі JSON
-            Debug.Log("Response JSON: " + json.ToString());*/
+            if (!dict.ContainsKey("weather"))
+            {
+                EditorUtility.DisplayDialog("Error parsing json", "Not found weather instance", "Ok");
+                yield break;
+            }
+
+            var weather = dict["weather"][0] as JObject;
+            if (weather != null)
+            {
+                var weatherID = int.Parse(weather["id"]!.ToString());
+                
+                if (weatherID <= 800) 
+                    weatherID = weatherID / 100;
+                
+                if (weatherID > 800) 
+                    weatherID = 9;
+                Debug.Log("Weather id:" + weatherID);
+
+                Debug.Log("Weather: " + GetWeatherByID(weatherID));
+
+            }
+
+
+            if (!dict.ContainsKey("main"))
+            {
+                EditorUtility.DisplayDialog("Error parsing json", "Not found main instance", "Ok");
+                yield break;
+            }
+            
+            var mainTemp = dict["main"] as JObject;
+            if (mainTemp != null)
+            {
+                var temp = float.Parse(mainTemp["temp"]!.ToString());
+                var intTemp = Mathf.FloorToInt(temp);
+            
+                Debug.Log("Main temp:" + intTemp);
+            }
         }
         else
         {
@@ -39,9 +74,26 @@ public class WeatherGetController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private string GetWeatherByID(int weatherId)
     {
-        
+        switch (weatherId)
+        {
+            case 2:
+                return "thunderstorm";
+            case 3:
+                return "drizzle";
+            case 5:
+                return "rain";
+            case 6:
+                return "snow";
+            case 7:
+                return "atmosphere";
+            case 8:
+                return "clear";
+            case 9:
+                return "clouds";
+            default:
+                return "_undefined_";
+        }
     }
 }

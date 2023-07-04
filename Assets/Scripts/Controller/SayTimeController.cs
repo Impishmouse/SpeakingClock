@@ -60,7 +60,7 @@ public class SayTimeController : MonoBehaviour
     
     public void SayTime(int hours, int minutes)
     {
-        SayTime(hours,minutes == 30);
+        SayTime(hours,minutes >= 30);
     }
     
     public void SayTime(int hours, bool sayMinutes)
