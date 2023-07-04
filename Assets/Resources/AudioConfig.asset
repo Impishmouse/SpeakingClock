@@ -13,43 +13,33 @@ MonoBehaviour:
   m_Name: AudioConfig
   m_EditorClassIdentifier: 
   config:
-  - audioType: 2
+  - audioType: 1
     audioClips:
-    - {fileID: 8300000, guid: 719e15b54189ccb448dd748d929bf151, type: 3}
-    - {fileID: 8300000, guid: 0a5879ace494b4e48b0c1cd29ee1249f, type: 3}
-    - {fileID: 8300000, guid: a3f741d976463cb46aff48bf7f69c953, type: 3}
-    - {fileID: 8300000, guid: 79a3dd3dacca2fb499d171e2591a8d5e, type: 3}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  One: {fileID: 8300000, guid: 719e15b54189ccb448dd748d929bf151, type: 3}
-  Two: {fileID: 8300000, guid: 0a5879ace494b4e48b0c1cd29ee1249f, type: 3}
-  Three: {fileID: 8300000, guid: a3f741d976463cb46aff48bf7f69c953, type: 3}
-  Fore: {fileID: 8300000, guid: 79a3dd3dacca2fb499d171e2591a8d5e, type: 3}
-  Five: {fileID: 8300000, guid: f724afd0de96af449b324a20d4aa5e2b, type: 3}
-  Six: {fileID: 8300000, guid: 993fc65eb7dca974594543292f2d8bcd, type: 3}
-  Seven: {fileID: 8300000, guid: 2df190011df278a4fa1544dbc160ca27, type: 3}
-  Eight: {fileID: 8300000, guid: a24094c0bee06db4c80d92652d902203, type: 3}
-  Nine: {fileID: 8300000, guid: 809d5f841b4b08842a630fbec27c40e8, type: 3}
-  Ten: {fileID: 8300000, guid: 182e2d353e75f6542a87e1b6a14fa9bd, type: 3}
-  Eleven: {fileID: 8300000, guid: e8672b9dfbe204644b07661eb6e85d20, type: 3}
-  Twelve: {fileID: 8300000, guid: 8061bd19716f185498e3a7a0db775251, type: 3}
-  Thirteen: {fileID: 8300000, guid: 9f2016e4ce9b9a34c84fc8ba688365ae, type: 3}
-  Fourteen: {fileID: 8300000, guid: 5128ac983d7e71b439be8d00148464fe, type: 3}
-  Fiveteen: {fileID: 8300000, guid: 81df0d6fedb74cf458d9c7cee262a8ae, type: 3}
-  Sixteen: {fileID: 8300000, guid: 2cd998b01f392c641ace64354e4345e7, type: 3}
-  Seventeen: {fileID: 8300000, guid: f5398667b60d4d8428a82d056c37c344, type: 3}
-  Eighteen: {fileID: 8300000, guid: ec06888440db9374e80282bbeb093ddc, type: 3}
-  Nineteen: {fileID: 8300000, guid: 0d1cfbda083c40f46bf1880ca76d4331, type: 3}
-  Twenty: {fileID: 8300000, guid: 9df6d5916680f99468e176321b4dc82c, type: 3}
-  TwentyOne: {fileID: 8300000, guid: 1bf5019b36ce8d143a9a521216725fa5, type: 3}
-  TwentySecond: {fileID: 8300000, guid: 633c52057daa54149a5a4706653db40a, type: 3}
-  TwentyThird: {fileID: 8300000, guid: 15deeaa746467424ab7d869f04205f2a, type: 3}
-  TwentyFourth: {fileID: 8300000, guid: e244c5e67bed3a543a314ff5f46003b8, type: 3}
-  ThirtyMsinutes: {fileID: 8300000, guid: 0e436c49f1975fb469d8c326a552c0f2, type: 3}
+    - {fileID: 8300000, guid: 78ddd30a511bc3145b03095ba5f25cb9, type: 3}
+    - {fileID: 8300000, guid: d23ddec85dfdb1046908d89d5bc9b91a, type: 3}
+    - {fileID: 8300000, guid: 75d48b931dda1214bb329e474c33043d, type: 3}
+    - {fileID: 8300000, guid: 5c6edfca35642d942974585f7be288fc, type: 3}
+    - {fileID: 8300000, guid: 923d94ce37cc14347b25e9d90614d4d8, type: 3}
+    - {fileID: 8300000, guid: 69ac26f08399dbb4b8e1eab2e71f8867, type: 3}
+    - {fileID: 8300000, guid: 01a8f3b3469391f41acfdd2702864a2f, type: 3}
+    - {fileID: 8300000, guid: e38396e12e1249c4ba3832204aa79dfd, type: 3}
+    - {fileID: 8300000, guid: db134041416bed8498a47766e447db48, type: 3}
+    - {fileID: 8300000, guid: f45fd05ee47586140be947179732f0d6, type: 3}
+    - {fileID: 8300000, guid: 5791533b4cd069f4daf94ecb22b2c845, type: 3}
+    - {fileID: 8300000, guid: fdc2e6f0b162c5449ab2a8a2457820ca, type: 3}
+    - {fileID: 8300000, guid: 2a549d258d429094e9ee85f86004b6cb, type: 3}
+    - {fileID: 8300000, guid: ba412468bbd4176469fa55fd7011399c, type: 3}
+    - {fileID: 8300000, guid: 634c49579f504934db6494e3796e9281, type: 3}
+    - {fileID: 8300000, guid: 6b23435ab2420514c91a988c94236c0c, type: 3}
+    - {fileID: 8300000, guid: b30d4093544e5ae41bb58ab19b59b2c9, type: 3}
+    - {fileID: 8300000, guid: 2fd04f7bae87f6c40b69a5dd868dee60, type: 3}
+    - {fileID: 8300000, guid: 5fb409106ce660849884d96960f4c758, type: 3}
+    - {fileID: 8300000, guid: fdbee179a37b085418fe1a430a70cf52, type: 3}
+    - {fileID: 8300000, guid: cb72a4cfec30ab042875e7b32d8d9cd3, type: 3}
+    - {fileID: 8300000, guid: 4ef3d4d5d677b6c489e743fe4d9d1e01, type: 3}
+    - {fileID: 8300000, guid: 66cdfb092465b874ba5b94359f1d5554, type: 3}
+    - {fileID: 8300000, guid: bee8d6a68db94e2419664a26f58e3b2c, type: 3}
+    - {fileID: 8300000, guid: 9619a11a4accb6247a398d3cb64dc181, type: 3}
   StartRing: {fileID: 8300000, guid: 1024c77659bb6414fbc2d354da35fbad, type: 3}
   Atmosphere: {fileID: 8300000, guid: 91f5fecf708bf8543b8dcb66b5e7f178, type: 3}
   Clear: {fileID: 8300000, guid: 5117fc0a4767dbb4b941e296622b7429, type: 3}

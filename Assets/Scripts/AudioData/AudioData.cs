@@ -6,8 +6,8 @@ using UnityEngine;
 [Serializable]
 public class AudioData 
 {
-    [SerializeField] private AudioType audioType;
-    [SerializeField] private List<AudioClip> audioClips;
+    [SerializeField] public AudioType audioType;
+    [SerializeField] public List<AudioClip> audioClips;
     
     public enum AudioType
     {

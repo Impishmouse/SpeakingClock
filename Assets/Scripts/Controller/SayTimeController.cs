@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class SayTimeController : MonoBehaviour
 {
-    //private const hoursToAudioClip = [];
+    /**
+     * 
+     *  Simple say time audio controller.
+     *  Which plays hours and 30 minutes by play short audio sources in correct sequence.   
+     *  
+     */
+    
+    
     private Dictionary<int, AudioClip> _hoursToAudioClip;
     private bool _sayMinutes;
     private int _remainder;
@@ -15,31 +22,34 @@ public class SayTimeController : MonoBehaviour
     {
         _needsStartRingPlay = true;
         
+        var numberHours = AudioConfig.Instance.GetAudioByType(AudioData.AudioType.HourNumbers); 
+        
         _hoursToAudioClip = new Dictionary<int, AudioClip>();
-        _hoursToAudioClip.Add(1, AudioConfig.Instance.One);
-        _hoursToAudioClip.Add(2, AudioConfig.Instance.Two);
-        _hoursToAudioClip.Add(3, AudioConfig.Instance.Three);
-        _hoursToAudioClip.Add(4, AudioConfig.Instance.Fore);
-        _hoursToAudioClip.Add(5, AudioConfig.Instance.Five);
-        _hoursToAudioClip.Add(6, AudioConfig.Instance.Six);
-        _hoursToAudioClip.Add(7, AudioConfig.Instance.Seven);
-        _hoursToAudioClip.Add(8, AudioConfig.Instance.Eight);
-        _hoursToAudioClip.Add(9, AudioConfig.Instance.Nine);
-        _hoursToAudioClip.Add(10, AudioConfig.Instance.Ten);
-        _hoursToAudioClip.Add(11, AudioConfig.Instance.Eleven);
-        _hoursToAudioClip.Add(12, AudioConfig.Instance.Twelve);
-        _hoursToAudioClip.Add(13, AudioConfig.Instance.Thirteen);
-        _hoursToAudioClip.Add(14, AudioConfig.Instance.Fourteen);
-        _hoursToAudioClip.Add(15, AudioConfig.Instance.Fiveteen);
-        _hoursToAudioClip.Add(16, AudioConfig.Instance.Sixteen);
-        _hoursToAudioClip.Add(17, AudioConfig.Instance.Seventeen);
-        _hoursToAudioClip.Add(18, AudioConfig.Instance.Eighteen);
-        _hoursToAudioClip.Add(19, AudioConfig.Instance.Nineteen);
-        _hoursToAudioClip.Add(20, AudioConfig.Instance.Twenty);
-        _hoursToAudioClip.Add(21, AudioConfig.Instance.TwentyOne);
-        _hoursToAudioClip.Add(22, AudioConfig.Instance.TwentySecond);
-        _hoursToAudioClip.Add(23, AudioConfig.Instance.TwentyThird);
-        _hoursToAudioClip.Add(24, AudioConfig.Instance.TwentyFourth);
+        _hoursToAudioClip.Add(1, numberHours.audioClips[0]);
+        _hoursToAudioClip.Add(2, numberHours.audioClips[1]);
+        _hoursToAudioClip.Add(3, numberHours.audioClips[2]);
+        _hoursToAudioClip.Add(4, numberHours.audioClips[3]);
+        _hoursToAudioClip.Add(5, numberHours.audioClips[4]);
+        _hoursToAudioClip.Add(6, numberHours.audioClips[5]);
+        _hoursToAudioClip.Add(7, numberHours.audioClips[6]);
+        _hoursToAudioClip.Add(8, numberHours.audioClips[7]);
+        _hoursToAudioClip.Add(9, numberHours.audioClips[8]);
+        _hoursToAudioClip.Add(10, numberHours.audioClips[9]);
+        _hoursToAudioClip.Add(11, numberHours.audioClips[10]);
+        _hoursToAudioClip.Add(12, numberHours.audioClips[11]);
+        _hoursToAudioClip.Add(13, numberHours.audioClips[12]);
+        _hoursToAudioClip.Add(14, numberHours.audioClips[13]);
+        _hoursToAudioClip.Add(15, numberHours.audioClips[14]);
+        _hoursToAudioClip.Add(16, numberHours.audioClips[15]);
+        _hoursToAudioClip.Add(17, numberHours.audioClips[16]);
+        _hoursToAudioClip.Add(18, numberHours.audioClips[17]);
+        _hoursToAudioClip.Add(19, numberHours.audioClips[18]);
+        _hoursToAudioClip.Add(20, numberHours.audioClips[19]);
+        _hoursToAudioClip.Add(21, numberHours.audioClips[20]);
+        _hoursToAudioClip.Add(22, numberHours.audioClips[21]);
+        _hoursToAudioClip.Add(23, numberHours.audioClips[22]);
+        _hoursToAudioClip.Add(24, numberHours.audioClips[23]);
+        _hoursToAudioClip.Add(25, numberHours.audioClips[24]);
     }
 
     public bool NeedsStartRingPlay {
@@ -90,6 +100,6 @@ public class SayTimeController : MonoBehaviour
     private void OnFinishMinutesSay()
     {
         _sayMinutes = false;
-        App.AudioController.PlaySound(AudioConfig.Instance.ThirtyMsinutes);
+        App.AudioController.PlaySound(_hoursToAudioClip[25]);
     }
 }
