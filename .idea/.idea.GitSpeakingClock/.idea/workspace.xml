@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/BaseQueryCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/BaseQueryCommand.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/IQueryCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/IQueryCommand.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayTimeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayWeatherController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayWeatherController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/App.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/AudioController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/AudioController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayTimeController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dmytro.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Lada.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Mykyta.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Natalia.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +93,7 @@
       <workItem from="1688482069838" duration="1682000" />
       <workItem from="1688483806409" duration="2468000" />
       <workItem from="1688542651006" duration="5081000" />
-      <workItem from="1688568373211" duration="4766000" />
+      <workItem from="1688568373211" duration="5342000" />
     </task>
     <servers />
   </component>
