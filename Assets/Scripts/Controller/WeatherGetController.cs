@@ -1,22 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Networking;
-using UnityEngine.UI;
-using UnityEngine.Serialization;
+using Web;
+using Web.json;
 
 public class WeatherGetController : MonoBehaviour
 {
-    private const string targetURL = "https://api.openweathermap.org/data/2.5/weather?id=702550&units=metric&lang=ua&appid=789ce2a5ee25556243a78f50f5aa1547"; // Замініть це на ваше посилання
+    
+    private void OnCompleteLoad(RequestResultData result)
+    {
+        var data = WeatherJson.Parse(result.Text);
+        Debug.Log($"Weather id:" + data.WeatherID); 
+        Debug.Log($"Weather type:" + data.Type); 
+        Debug.Log($"Temperature:" + data.Temp); 
+    }
     
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
-        Debug.Log("Test call URL");
+        
+        var request = new WeatherWebRequest(null, OnCompleteLoad);
+        WebRequestLoader.Instance.Execute(request);
+        
+        
+        /*Debug.Log("Test call URL");
         
         // Отримання відповіді зі сторінки
         UnityWebRequest request = UnityWebRequest.Get(targetURL);
@@ -71,7 +76,7 @@ public class WeatherGetController : MonoBehaviour
         else
         {
             Debug.LogError("Request failed with error: " + request.error);
-        }
+        }*/
     }
 
     private string GetWeatherByID(int weatherId)
