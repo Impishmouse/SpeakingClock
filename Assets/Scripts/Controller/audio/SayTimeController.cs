@@ -2,7 +2,7 @@
 using ScriptableObjects;
 using UnityEngine;
 
-namespace Controller
+namespace Controller.audio
 {
     public class SayTimeController : MonoBehaviour
     {

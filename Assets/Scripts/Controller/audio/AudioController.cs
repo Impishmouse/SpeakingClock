@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using DG.Tweening;
-using UnityEditor;
 using UnityEngine;
 
-namespace Controllers
+namespace Controller.audio
 {
 	public class AudioController : MonoBehaviour
 	{

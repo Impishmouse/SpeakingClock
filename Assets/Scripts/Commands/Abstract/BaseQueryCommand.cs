@@ -1,8 +1,5 @@
 ﻿using System;
-using Core.UI.Manager;
-using Core.UI.Manager.Transitions;
-using Redactor.UI.Dialogs.Info;
-using Redactor.UI.Dialogs.Loading;
+using Web;
 
 namespace Redactor.Commands.Abstract
 {
@@ -10,19 +7,21 @@ namespace Redactor.Commands.Abstract
     {
         public abstract event Action<bool> CompleteEvent;
 
-        public LoadingRedactorDialog LoadingDialog { get; set; }
+        //public LoadingRedactorDialog LoadingDialog { get; set; }
 
         protected void ShowLoader()
         {
-            if (LoadingDialog == null)
+            // TODO uncomment if it needs
+            /*if (LoadingDialog == null)
             {
                 LoadingDialog = UIManager.OpenDialog<LoadingRedactorDialog, AnimateTransition>();
-            }
+            }*/
         }
 
         protected void HideLoader()
         {
-            LoadingDialog?.Close();
+            // TODO uncomment if it needs
+            //LoadingDialog?.Close();
         }
         
         public abstract void Execute();
@@ -31,7 +30,8 @@ namespace Redactor.Commands.Abstract
         {
             if (!result.IsSuccess)
             {
-                UIManager.OpenDialog<InfoRedactorDialog, AnimateTransition>().Initialize(result.Text + "\n\n" + result.Error);
+                // TODO uncomment if it needs
+                //UIManager.OpenDialog<InfoRedactorDialog, AnimateTransition>().Initialize(result.Text + "\n\n" + result.Error);
             }
         }
     }

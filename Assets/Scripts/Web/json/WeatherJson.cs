@@ -50,27 +50,19 @@ namespace Web.json
             return retData;
         }
         
-        private static int GetWeatherByID(int weatherId)
+        private static WeatherData.WeatherType GetWeatherByID(int weatherId)
         {
-            switch (weatherId)
+            return weatherId switch
             {
-                case 2:
-                    return (int)WeatherData.WeatherType.Thunderstorm;
-                case 3:
-                    return (int)WeatherData.WeatherType.Drizzle;
-                case 5:
-                    return (int)WeatherData.WeatherType.Rain;
-                case 6:
-                    return (int)WeatherData.WeatherType.Snow;
-                case 7:
-                    return (int)WeatherData.WeatherType.Atmosphere;
-                case 8:
-                    return (int)WeatherData.WeatherType.Clear;
-                case 9:
-                    return (int)WeatherData.WeatherType.Clouds;
-                default:
-                    return (int)WeatherData.WeatherType.Undefined;
-            }
+                2 => WeatherData.WeatherType.Thunderstorm,
+                3 => WeatherData.WeatherType.Drizzle,
+                5 => WeatherData.WeatherType.Rain,
+                6 => WeatherData.WeatherType.Snow,
+                7 => WeatherData.WeatherType.Atmosphere,
+                8 => WeatherData.WeatherType.Clear,
+                9 => WeatherData.WeatherType.Clouds,
+                _ => WeatherData.WeatherType.Undefined
+            };
         }
         
     }

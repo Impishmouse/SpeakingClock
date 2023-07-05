@@ -4,11 +4,10 @@ namespace Data
     {
         public int WeatherID;
         public int Temp;
-        public int Type;
+        public WeatherType Type;
         
         public enum WeatherType
         {
-            Undefined,
             Thunderstorm,
             Drizzle,
             Rain,
@@ -16,6 +15,7 @@ namespace Data
             Atmosphere,
             Clear,
             Clouds,
+            Undefined,
         }
       
     }

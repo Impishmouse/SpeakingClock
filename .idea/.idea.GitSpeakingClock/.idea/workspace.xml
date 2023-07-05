@@ -2,28 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b5eb12-aa83-4e6e-9d98-545a94147adc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/MonoSingleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/MonoSingleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/RequestResultData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/RequestResultData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WeatherWebRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WeatherWebRequest.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WebRequestBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WebRequestBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WebRequestLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/WebRequestLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/BaseQueryCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/BaseQueryCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/IQueryCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Commands/Abstract/IQueryCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayTimeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayWeatherController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayWeatherController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitSpeakingClock/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioData.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioData/AudioData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/AudioData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioData/AudioData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/AudioData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/AudioConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/App.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/AudioController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/AudioController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/AudioController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/SayTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/audio/SayTimeController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/WeatherData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Web/json/WeatherJson.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Dmytro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Lada.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Mykyta.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Natalia.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +90,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="54596">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="481248">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="54596" />
+      <option name="pid" value="481248" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -114,6 +119,7 @@
       <workItem from="1688482069838" duration="1682000" />
       <workItem from="1688483806409" duration="2468000" />
       <workItem from="1688542651006" duration="5081000" />
+      <workItem from="1688568373211" duration="4766000" />
     </task>
     <servers />
   </component>
@@ -129,30 +135,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Controller/WeatherGetController.cs</url>
-          <line>9</line>
-          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Controller\WeatherGetController.cs" initialLine="9" containingFunctionPresentation="method 'OnCompleteLoad'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/Screens/HomeScreen.cs</url>
+          <line>102</line>
+          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\UI\Screens\HomeScreen.cs" initialLine="91" containingFunctionPresentation="method 'OnSuccessWeatherGot'">
             <startOffsets>
-              <option value="176" />
+              <option value="3959" />
             </startOffsets>
             <endOffsets>
-              <option value="218" />
+              <option value="4022" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Web/WebRequestLoader.cs</url>
-          <line>42</line>
-          <properties documentPath="D:\Work\Unity\GitSpeakingClock\Assets\Scripts\Web\WebRequestLoader.cs" initialLine="42" containingFunctionPresentation="method 'LoadCoroutine'">
-            <startOffsets>
-              <option value="1400" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1433" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

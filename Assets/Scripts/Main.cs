@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Controllers;
+using Controller;
+using Controller.audio;
 using ScriptableObjects;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class Main : MonoBehaviour
     {
         App.AudioController = FindObjectOfType<AudioController>();
         App.SayTimeController = FindObjectOfType<SayTimeController>();
+        App.SayWeatherController = FindObjectOfType<SayWeatherController>();
         
         //UIManager.ChangeScreen<HomeScreen>();
 
