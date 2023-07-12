@@ -14,6 +14,7 @@ public class Main : MonoBehaviour
         App.AudioController = FindObjectOfType<AudioController>();
         App.SayTimeController = FindObjectOfType<SayTimeController>();
         App.SayWeatherController = FindObjectOfType<SayWeatherController>();
+        App.SayNumbersController = FindObjectOfType<SayNumbersController>();
         
         //UIManager.ChangeScreen<HomeScreen>();
 

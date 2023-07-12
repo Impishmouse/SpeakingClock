@@ -49,6 +49,44 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 82e8d71429e85d7419147c3b3f2afd26, type: 3}
     - {fileID: 8300000, guid: 806ef2ad5f6cf5044995feac1d19a3a5, type: 3}
     - {fileID: 8300000, guid: 4e3d88f46c8e01e42945995d3508a549, type: 3}
+  - audioType: 3
+    audioClips:
+    - {fileID: 8300000, guid: 586f941fded63ce4b982a09ef7b78d4d, type: 3}
+    - {fileID: 8300000, guid: f74bf7cb6c44fe449b53ab06bebf0434, type: 3}
+    - {fileID: 8300000, guid: 98a2c5482a0fbca4da665f0147892e1e, type: 3}
+    - {fileID: 8300000, guid: 85b03e35cbc05b44cb4aa6bf1c3a9551, type: 3}
+    - {fileID: 8300000, guid: 94b5ed48b1ada0547aea1650158a021f, type: 3}
+    - {fileID: 8300000, guid: f68ebf3e670a2f748aea940f8da6ff29, type: 3}
+    - {fileID: 8300000, guid: 46baa2a8db9ec1b4095777989cfddba0, type: 3}
+    - {fileID: 8300000, guid: e6da677bc73ac2b4a89de5c449a77191, type: 3}
+    - {fileID: 8300000, guid: 8951dcc067ec01f47ba3b53c6bdfab7c, type: 3}
+    - {fileID: 8300000, guid: 8ba1a000d71c1d440a14a5f13f4af4e1, type: 3}
+    - {fileID: 8300000, guid: 15b0483f1a5ba204b9e6e7e528e13740, type: 3}
+    - {fileID: 8300000, guid: 3ff4fa4e8e80f8c45a97087ef3e52a86, type: 3}
+    - {fileID: 8300000, guid: aef8e1d698555204987647e869d37306, type: 3}
+    - {fileID: 8300000, guid: c2705c5891bf62242848b45eb7c7c50d, type: 3}
+    - {fileID: 8300000, guid: 9d8e3307dda9013468968cab372dbf9e, type: 3}
+    - {fileID: 8300000, guid: f07c474d229b41545b1ee3eee6e82ab1, type: 3}
+    - {fileID: 8300000, guid: e33110d03570274448121b25249d2a88, type: 3}
+    - {fileID: 8300000, guid: 6df6295fed4647e47b91d240934b5c46, type: 3}
+    - {fileID: 8300000, guid: c49ecdf89a57a534182412b26f1ea86e, type: 3}
+    - {fileID: 8300000, guid: a1a6aaaf4acd6564f882b393a622084f, type: 3}
+    - {fileID: 8300000, guid: 6970cd6390cb6684f8f132b62b1a92ef, type: 3}
+    - {fileID: 8300000, guid: 3f125792500736243863c7924dc2086e, type: 3}
+    - {fileID: 8300000, guid: e5cb29753e46eae48a5935f6c440467a, type: 3}
+    - {fileID: 8300000, guid: 4d22448438701124cb5f66d133f093c6, type: 3}
+    - {fileID: 8300000, guid: 9cbbb8cc27375d64aaac238d07f6e05d, type: 3}
+    - {fileID: 8300000, guid: 8f4c992b1bf80934fa84c68f8dd20db4, type: 3}
+    - {fileID: 8300000, guid: 2bdabaa8d43b6fa4598ebdb15592f824, type: 3}
+    - {fileID: 8300000, guid: 76e5094b71bacac4494e2792bba3e798, type: 3}
+    - {fileID: 8300000, guid: d4fe1e2e640abb54a8cf70bc76f9e4c9, type: 3}
+    - {fileID: 8300000, guid: 9f4360e440c010f43baa29fe49faea4d, type: 3}
+    - {fileID: 8300000, guid: 4f4be85d3603f2d40b5fdf1ac4292cd3, type: 3}
+    - {fileID: 8300000, guid: e5cd2bf6e7a1bb641b01968cf8b66ad7, type: 3}
+    - {fileID: 8300000, guid: 4dc5686dba3e04d4d8520e568c63b6f0, type: 3}
+    - {fileID: 8300000, guid: 06c0d646db3dfc5429ebc6c5127bfc58, type: 3}
+    - {fileID: 8300000, guid: 8ce544733a4a69f4aac69c4e31817663, type: 3}
+    - {fileID: 8300000, guid: e9cdded8c86fab346bd8d5ff9032cf14, type: 3}
   StartRing: {fileID: 8300000, guid: 1024c77659bb6414fbc2d354da35fbad, type: 3}
   Atmosphere: {fileID: 8300000, guid: 91f5fecf708bf8543b8dcb66b5e7f178, type: 3}
   Clear: {fileID: 8300000, guid: 5117fc0a4767dbb4b941e296622b7429, type: 3}

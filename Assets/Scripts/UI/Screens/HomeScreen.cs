@@ -100,7 +100,8 @@ public class HomeScreen : BaseScreen
     private void OnSuccessWeatherGot(bool obj)
     {
         weatherGetter.CompleteEvent -= OnSuccessWeatherGot;
-        App.SayWeatherController.SayWeather(weatherGetter.WeatherData);
+        //App.SayWeatherController.SayWeather(weatherGetter.WeatherData);
+        App.SayNumbersController.SayWeather(weatherGetter.WeatherData);
     }
 
     private void OnPlayButtonClickHandler()
