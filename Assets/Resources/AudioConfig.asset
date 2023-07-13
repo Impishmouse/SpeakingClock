@@ -88,10 +88,3 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8ce544733a4a69f4aac69c4e31817663, type: 3}
     - {fileID: 8300000, guid: e9cdded8c86fab346bd8d5ff9032cf14, type: 3}
   StartRing: {fileID: 8300000, guid: 1024c77659bb6414fbc2d354da35fbad, type: 3}
-  Atmosphere: {fileID: 8300000, guid: 91f5fecf708bf8543b8dcb66b5e7f178, type: 3}
-  Clear: {fileID: 8300000, guid: 5117fc0a4767dbb4b941e296622b7429, type: 3}
-  Clouds: {fileID: 8300000, guid: d137130d9ce05ff43905ff1a3165554c, type: 3}
-  Drizzle: {fileID: 8300000, guid: bec16e457ca561c4480322d4ce9b7811, type: 3}
-  Rain: {fileID: 8300000, guid: 88fc412add9a00f47b2def06a1e730c7, type: 3}
-  Snow: {fileID: 8300000, guid: f0668922b4c418a49a1ac52f90d56ea8, type: 3}
-  Thunderstorm: {fileID: 8300000, guid: 7ca5f6e3f99dffe46b61a25ab3c75e6b, type: 3}
