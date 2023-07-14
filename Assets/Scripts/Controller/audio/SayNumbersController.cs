@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Data;
+using DG.Tweening;
 using ScriptableObjects;
 using UnityEngine;
 
@@ -50,20 +51,21 @@ namespace Controller.audio
         {
             Debug.Log($"Current temperature:{weatherGetterWeatherData.Temp}");
 
-            SayNumber(18);
-
-            //App.AudioController.PlaySound(weatherToAudioClip[weatherGetterWeatherData.Type]);
+            SayNumber(weatherGetterWeatherData.Temp);
         }
 
-        private void SayNumber(int number)
+        private void SayNumber(int number, TweenCallback nextAction = null)
         {
             if (number <= 20)
             {
-                App.AudioController.PlaySound(numbersToAudioClip[number]);
+                App.AudioController.PlaySound(numbersToAudioClip[number], nextAction);
             }
-            else
+            else if (number < 100)
             {
-                
+                var tens = ((number / 10) % 10) * 10;
+                var first = number % 10;
+                Debug.Log($"Tens:{tens}; first:{first}; in Number:{number}");
+                App.AudioController.PlaySound(numbersToAudioClip[tens], () => { SayNumber(first); });
             }
         }
         
