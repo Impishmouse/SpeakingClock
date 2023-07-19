@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Commands;
 using Controller;
 using Core.UI.Manager.Abstract;
 using ScriptableObjects;
@@ -11,6 +12,7 @@ public class HomeScreen : BaseScreen
 {
     [SerializeField] private Button btnPlay;
     [SerializeField] private Button btnSecondTest;
+    [SerializeField] private CommandsRunner commandsRunner;
     
     private WeatherGetController weatherGetter;
     
@@ -31,8 +33,9 @@ public class HomeScreen : BaseScreen
         // Done!    1. Use  Base get data from  https://api.openweathermap.org/data/2.5/weather?id=702550&units=metric&lang=ua&appid=789ce2a5ee25556243a78f50f5aa1547
         // Done!    2. Say weather type.
         //          3. Say current temperature 
-        //              3.0. Make with PyCharm dictionary of the sounds which can say temperature from -30 to +30
-        //              3.1. Say it by writing a NumbersSayController
+        // Done!        3.0. Make with PyCharm dictionary of the sounds which can say temperature from -30 to +30
+        // Done!        3.1. Say it by writing a NumbersSayController
+        //              3.2. Say "degree of cold or hot" after saying a number.
         //          4. Say Humidity in % with step 5%.
         //              4.0  Make with PyCharm dictionary of the sounds which can say percentage of the humidity.
         //              4.1 Say it by writing a PercentageSayController
@@ -97,11 +100,10 @@ public class HomeScreen : BaseScreen
         weatherGetter.Execute();
     }
 
-    private void OnSuccessWeatherGot(bool obj)
+    private async void OnSuccessWeatherGot(bool obj)
     {
         weatherGetter.CompleteEvent -= OnSuccessWeatherGot;
-        //App.SayWeatherController.SayWeather(weatherGetter.WeatherData);
-        App.SayNumbersController.SayWeather(weatherGetter.WeatherData);
+        await commandsRunner.Execute(new SayWeatherCommand(weatherGetter.WeatherData));
     }
 
     private void OnPlayButtonClickHandler()

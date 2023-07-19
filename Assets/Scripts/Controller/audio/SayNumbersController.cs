@@ -10,7 +10,17 @@ namespace Controller.audio
     public class SayNumbersController : MonoBehaviour
     {
         private Dictionary<int, AudioClip> numbersToAudioClip;
-        
+        private WeatherData weatherGetterWeatherData;
+
+        private Dictionary<WeatherType, AudioClip> weatherAudioClip;
+
+        public WeatherData WeatherData
+        {
+            set => weatherGetterWeatherData = value;
+        }
+
+        public event Action<bool> CompleteEvent;
+
         private void Awake()
         {
             var numAudioData = AudioConfig.Instance.GetAudioByType(AudioData.AudioType.Numbers);
@@ -44,62 +54,47 @@ namespace Controller.audio
             numbersToAudioClip.Add(80, numAudioData.audioClips[25]);
             numbersToAudioClip.Add(90, numAudioData.audioClips[26]);
             numbersToAudioClip.Add(100, numAudioData.audioClips[27]);
-            
+
+            weatherAudioClip = new Dictionary<WeatherType, AudioClip>();
+            weatherAudioClip.Add(WeatherType.Hot, numAudioData.audioClips[32]);
+            weatherAudioClip.Add(WeatherType.Cold, numAudioData.audioClips[31]);
         }
 
-        public void SayWeather(WeatherData weatherGetterWeatherData)
+        public void SayTemperatureNumber()
         {
             Debug.Log($"Current temperature:{weatherGetterWeatherData.Temp}");
 
             SayNumber(weatherGetterWeatherData.Temp);
         }
 
-        private void SayNumber(int number, TweenCallback nextAction = null)
+        public void SayFelling()
+        {
+            if (weatherGetterWeatherData.Temp > 0)
+                App.AudioController.PlaySound(weatherAudioClip[WeatherType.Hot],
+                    () => { CompleteEvent?.Invoke(true); });
+            else
+                App.AudioController.PlaySound(weatherAudioClip[WeatherType.Cold],
+                    () => { CompleteEvent?.Invoke(true); });
+        }
+
+        private void SayNumber(int number)
         {
             if (number <= 20)
             {
-                App.AudioController.PlaySound(numbersToAudioClip[number], nextAction);
+                App.AudioController.PlaySound(numbersToAudioClip[number], () => { CompleteEvent?.Invoke(true); });
             }
             else if (number < 100)
             {
                 var tens = ((number / 10) % 10) * 10;
                 var first = number % 10;
                 Debug.Log($"Tens:{tens}; first:{first}; in Number:{number}");
-                App.AudioController.PlaySound(numbersToAudioClip[tens], () => { SayNumber(first); });
+                App.AudioController.PlaySound(numbersToAudioClip[tens],
+                    () => { SayNumber(first); });
             }
         }
-        
-        public enum NumberType
+
+        public enum WeatherType
         {
-            Zero, 
-            One,
-            Two,
-            Three,
-            Four,
-            Five,
-            Six,
-            Seven,
-            Eight,
-            Nine,
-            Ten,
-            Eleven,
-            Twelve,
-            Thirteen,
-            Fourteen,
-            Fifteen,
-            Sixteen,
-            Seventeen,
-            Eighteen,
-            Nineteen,
-            Twenty,
-            Thirty,
-            Forty,
-            Fifty,
-            Sixty,
-            Seventy,
-            Eighty,
-            Ninety,
-            Hundred,
             Degree1,
             Degree2,
             Degree5,

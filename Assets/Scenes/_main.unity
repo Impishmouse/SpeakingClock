@@ -554,6 +554,11 @@ PrefabInstance:
       propertyPath: btnSecondTest
       value: 
       objectReference: {fileID: 1108299612}
+    - target: {fileID: 508704296, guid: cc86e5890a5f4614491598cffedf0f0e, type: 3}
+      propertyPath: commandsRunner
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b36e0538cc2f0f40890fda24a60ddee,
+        type: 2}
     - target: {fileID: 1843390281, guid: cc86e5890a5f4614491598cffedf0f0e, type: 3}
       propertyPath: m_Text
       value: Say time
