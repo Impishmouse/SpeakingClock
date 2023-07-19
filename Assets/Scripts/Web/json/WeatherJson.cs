@@ -17,7 +17,8 @@ namespace Web.json
 
             if (!dict.ContainsKey("weather"))
             {
-                EditorUtility.DisplayDialog("Error parsing json", "Not found weather instance", "Ok");
+                //EditorUtility.DisplayDialog("Error parsing json", "Not found weather instance", "Ok");
+                
             }
 
             var weather = dict["weather"][0] as JObject;
@@ -35,9 +36,9 @@ namespace Web.json
                 retData.Type = GetWeatherByID(weatherID);
             }
 
-
-            if (!dict.ContainsKey("main"))
-                EditorUtility.DisplayDialog("Error parsing json", "Not found main instance", "Ok");
+            // TODO rewrite this
+            /*if (!dict.ContainsKey("main"))
+                EditorUtility.DisplayDialog("Error parsing json", "Not found main instance", "Ok");*/
             
             var mainTemp = dict["main"] as JObject;
             if (mainTemp != null)
